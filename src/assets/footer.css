@@ -14,11 +14,14 @@
   gap: 20px;
   /* display: flex; */
   justify-content: space-around;
+  position: relative;
+  z-index: 2;
 }
 
 .footer img {
   width: 30px;
   height: 30px;
+  
 }
 
 .footer-item {
@@ -28,10 +31,11 @@
   color: white; /* Cambia el color del texto */
   font-size: 14px;
   font-weight: bold;
+  
 }
 
 .footer-item:hover {
-  color: #25d366; /* Cambia el color al pasar el mouse */
+  color: #6c0952; /* Cambia el color al pasar el mouse */
 }
 
 .footer-icon {
