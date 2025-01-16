@@ -1,6 +1,5 @@
-<script>
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap'
+<script setup lang="ts">
+import Footer from '@/components/footer.vue'
 import { ref, onMounted } from 'vue'
 
 const carouselElement = (ref < HTMLElement) | (null > null)
@@ -32,29 +31,25 @@ onMounted(() => {
   />
   <div class="page-wrapper">
     <div class="">
-      <header></header>
-      <div class="d-flex align-items-center justify-content-between py-2 px-3">
-        <div>
-          <h5 class="m-0"><b>NUTRI FRESH</b></h5>
+      <header>
+        <img src="../../public/logoCreaciones_marsha.png" alt="" srcset="">
+        <div class="px-3">
+          <h5 class="title"><b>CREACIONES_MARSHA</b></h5>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path fill="#fff" fill-opacity="0" stroke-dasharray="20" stroke-dashoffset="20" d="M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5">
+                <animate attributeName="d" begin="0.5s" dur="1.5s" repeatCount="indefinite" values="M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5;M12 4h2v3h2.5l-4.5 4.5M12 4h-2v3h-2.5l4.5 4.5;M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5" />
+                <animate fill="freeze" attributeName="fill-opacity" begin="0.7s" dur="0.5s" values="0;1" />
+                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="20;0" />
+              </path>
+              <path stroke-dasharray="14" stroke-dashoffset="14" d="M6 19h12">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.2s" values="14;0" />
+              </path>
+            </g>
+	        </svg>
         </div>
-
-        <div class="inicio d-flex align-items-right">
-          <span class="separator"></span>
-          <a href="https://es-la.facebook.com/" target="_blank">
-            <img src="/img/facebook.png" alt="Facebook" />
-          </a>
-
-          <a href="https://www.tiktok.com/upload?lang=es" target="_blank">
-            <img src="/img/tiktok.png" alt="TikTok" />
-          </a>
-
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="/img/instagram.png" alt="Instagram" />
-          </a>
-        </div>
-      </div>
-    </div>
-
+      </header>
+  
     <main>
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -81,155 +76,32 @@ onMounted(() => {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/img/first-slide.jpg" class="d-block w-100" alt="First Slide" />
+            <img src="../../public/first-slide.png" class="d-block w-100" alt="First Slide" />
             <div class="carousel-caption d-none d-md-block">
-              <h1>DESAYUNOS SALUDABLES</h1>
+              <h1>ACCESORIOS</h1>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/img/second-slide.png" class="d-block w-100" alt="Second Slide" />
+            <img src="../../public/second-slide.png" class="d-block w-100" alt="Second Slide" />
             <div class="carousel-caption d-none d-md-block">
-              <h1>DESAYUNOS SALUDABLES</h1>
+              <h1>ACCESORIOS</h1>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/img/third-slide.png" class="d-block w-100" alt="Third Slide" />
+            <div class="third-slide">
+              <img src="../../public/third-slide1.png" class="d-block w-100" alt="Third Slide 1" />
+              <img src="../../public/third-slide2.png" class="d-block w-100" alt="Third Slide 2" />
+            </div>
             <div class="carousel-caption d-none d-md-block">
-              <h1>DESAYUNOS SALUDABLES</h1>
+              <h1>ACCESORIOS</h1>
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-
-      <div class="d-flex justify-content-around align-items-center">
-        <div class="position-relative align-items-center">
-          <img src="/img/Ellipse1.png" class="circle" alt="Desayuno Ligero" />
-          <img src="/img/like.png" class="icon-overlay" alt="Ícono Desayuno Ligero" />
-          <figcaption>
-            <h5>Desayuno Saludable</h5>
-            <p>Perfecto para una dieta equilibrada y rica en fibra.</p>
-          </figcaption>
-        </div>
-
-        <div class="position-relative align-items-center">
-          <img src="/img/Ellipse1.png" class="circle" alt="Desayuno Completo" />
-          <img src="/img/humbleicons.png" class="icon-overlay" alt="Ícono Desayuno Completo" />
-          <figcaption>
-            <h5>Desayuno Completo</h5>
-            <p>Una opción balanceada con todos los nutrientes.</p>
-          </figcaption>
-        </div>
-
-        <div class="position-relative text-center">
-          <img src="/img/Ellipse1.png" class="circle" alt="Desayuno Saludable" />
-          <img src="/img/coffee.png" class="icon-overlay" alt="Ícono Desayuno Saludable" />
-          <figcaption>
-            <h5>Desayuno Ligero</h5>
-            <p>Ideal para comenzar el día con energía.</p>
-          </figcaption>
-        </div>
-      </div>
-
-      <nav>
-        <div class="texto">
-          <h5>Beneficios</h5>
-          <p>• Aportan Energía para el Día.</p>
-          <p>• Mejoran la Concentración y el Rendimiento.</p>
-          <p>• Contribuyen a Mantener un Peso Saludable.</p>
-        </div>
-
-        <div class="imagen">
-          <img src="/img/Honey.png" alt="Honey Image" />
-        </div>
-      </nav>
-
-      <div class="question">
-        <h5>¿Te gusta el desayuno saludable?</h5>
-        <div class="options">
-          <label>
-            <input type="radio" name="answer" value="Sí" />
-            <span>Sí</span>
-          </label>
-          <label>
-            <input type="radio" name="answer" value="No" />
-            <span>No</span>
-          </label>
-        </div>
-      </div>
-
-      <section class="muestras">
-        <img src="/img/muestra1.jpg" alt="Muestra 1" />
-        <img src="/img/muestra2.jpg" alt="Muestra 2" />
-        <img src="/img/muestra3.jpg" alt="Muestra 3" />
-        <img src="/img/muestra4.jpg" alt="Muestra 4" />
-        <img src="/img/muestra5.jpg" alt="Muestra 5" />
-        <img src="/img/muestra6.jpg" alt="Muestra 6" />
-        <img src="/img/muestra7.jpg" alt="Muestra 7" />
-      </section>
-
-      <nav class="brunch">
-        <div class="imagen1">
-          <img src="/img/brunch.png" alt="Brunch Image" />
-        </div>
-
-        <div class="texto1">
-          <h5>Porcentaje de Bienestar</h5>
-          <br />
-          <div
-            class="progress"
-            role="progressbar"
-            aria-label="Basic example"
-            aria-valuenow="0"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div class="progress-bar" style="width: 45%">45%</div>
-          </div>
-          <br />
-          <div
-            class="progress"
-            role="progressbar"
-            aria-label="Basic example"
-            aria-valuenow="25"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div class="progress-bar" style="width: 78%">78%</div>
-          </div>
-          <br />
-          <div
-            class="progress"
-            role="progressbar"
-            aria-label="Basic example"
-            aria-valuenow="50"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div class="progress-bar" style="width: 89%">89%</div>
-          </div>
-        </div>
-      </nav>
     </main>
   </div>
-  <footer></footer>
+  </div>
+  <Footer/>
 </template>
 
 <style>

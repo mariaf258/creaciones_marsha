@@ -1,0 +1,24 @@
+header {
+    background-color: #d55fab;
+    background-image: none;
+    display: flex;
+}
+
+header img {
+    background-image: none;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.title {
+    color: white;
+}
+
+svg {
+    align-items: right;
+}
+
+.px-3 {
+    align-items: right;
+}
