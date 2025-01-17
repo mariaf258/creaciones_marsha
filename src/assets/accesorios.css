@@ -1,7 +1,13 @@
+.page-wrapper {
+    background-color: white;
+    z-index: 6;
+}
+
 header {
     background-color: #d55fab;
     background-image: none;
     display: flex;
+    height: 45px;
 }
 
 header img {
@@ -9,16 +15,98 @@ header img {
     border-radius: 20px;
     width: 40px;
     height: 40px;
+    margin-left: 10px;
+    margin-top: 3px;
 }
 
 .title {
     color: white;
+    text-align: center;
 }
 
 svg {
-    align-items: right;
+    gap: 20px;
 }
 
 .px-3 {
     align-items: right;
+    display: flex;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.carousel-caption h1 {
+    color: white;
+    margin-top: -30%;
+}
+
+.third-slide {
+    display: flex;
+}
+
+.elements {
+    grid-template-columns: 1fr 1fr 1fr;    
+    justify-content: center;
+    text-align: center;
+}
+
+section img {
+    width: 30%;
+    height: 30%;
+    border-radius: 5px;
+}
+
+section h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+section h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+    .px-3  {
+        margin-top: 12px;
+    }
+    
+    .carousel-caption h1 {
+        color: white;
+        margin-top: 30%;
+        z-index: 2;
+    }
+
+    section {
+        margin-top: 20px;
+        bottom: 20px;
+    }
+
+    .elements {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: left;
+        text-align: center
+    }
+
+    section img {
+        width: 30%;
+        height: 30%;
+        border-radius: 5px;
+    }
+
+    section h2 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    section h3 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 12px;
+    }
+
 }
