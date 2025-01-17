@@ -100,7 +100,12 @@ onMounted(() => {
       </div>
     </main>
 
-    <section>
+    <section class="product-list">
+      <div class="elements">
+        <img src="../../public/first-slide.png" alt="">
+        <h2>Nombre</h2>
+        <h3>Precio</h3>
+      </div>
       <div class="elements">
         <img src="../../public/first-slide.png" alt="">
         <h2>Nombre</h2>

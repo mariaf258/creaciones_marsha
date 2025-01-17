@@ -13,8 +13,8 @@ header {
 header img {
     background-image: none;
     border-radius: 20px;
-    width: 40px;
-    height: 40px;
+    width: 80%;
+    height: 80%;
     margin-left: 10px;
     margin-top: 3px;
 }
@@ -47,8 +47,15 @@ svg {
     display: flex;
 }
 
+.product-list {
+    display: flex;
+    justify-content: space-between; /* Espacios uniformes entre columnas */
+    gap: 20px; /* Espaciado entre elementos */
+    margin: 20px; 
+}
+
 .elements {
-    grid-template-columns: 1fr 1fr 1fr;    
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
     justify-content: center;
     text-align: center;
 }
@@ -84,6 +91,11 @@ section h3 {
     section {
         margin-top: 20px;
         bottom: 20px;
+    }
+
+    .product-list {
+        flex-direction: column; /* Cambiar a una sola columna en pantallas pequeñas */
+        align-items: center;
     }
 
     .elements {
